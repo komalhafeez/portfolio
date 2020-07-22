@@ -110,7 +110,7 @@ $(document).ready(function() {
     
     scrollLink.each(function() {
       
-      var sectionOffset = $(this.hash).offset().top - 20;
+      var sectionOffset = $(this.hash).offset().top -70;
       
       if ( sectionOffset <= scrollbarLocation ) {
         $(this).parent().addClass('computer');

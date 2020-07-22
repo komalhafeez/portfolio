@@ -31,7 +31,7 @@ font-family: 'Roboto', sans-serif;
   background: #FF3D4F;
   color: #fff;
    position: relative;
-    top: 16rem;
+    top: 20rem;
       border-radius: 30px;
   display: inline-block;
   font-size: 14px;
@@ -85,7 +85,7 @@ height: 86vh;
     position: relative;
     left: 50%;
     align-content: center;
-    top:  15rem;
+    top:  20rem;
     transform: translate(-50%,-50%);
 }
 
@@ -107,7 +107,7 @@ height: 86vh;
 
 .menu-item:hover
 {
-  color: #FF3D4F !important;
+    color: white;
 }
 .line1, .line2, .line3 {
   width: 23px;
@@ -130,7 +130,8 @@ height: 86vh;
 
 .custom-navbar {
   padding: 5px 30px;
-background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+   background: linear-gradient(to left, #FF3D4F ,#ff1a30);
+
 }
 .main-head
 {
@@ -145,6 +146,16 @@ background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
 .icon
 {
   color:#15FCF8;    
+}
+.upper-link
+{
+    color: white !important;
+    text-decoration: none
+}
+.upper-link:hover
+{
+    color: white !important;
+    text-decoration: none
 }
 /*----------------------------about me---------------*/
 
