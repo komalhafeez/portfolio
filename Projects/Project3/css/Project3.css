@@ -1,0 +1,355 @@
+/*photosque*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+.Links
+{
+    
+        border-bottom: 2px solid #15FCF8 !important;  
+ color: #15FCF8 !important;
+  
+  
+}
+.btn-front
+{
+ 
+    background: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-front a
+{
+   color: white;
+    text-decoration: none; 
+}
+.btn-front:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn-front:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+    padding: 15px 50px 22px 100px;
+}
+
+.btn-sep:before {
+    background: rgba(0,0,0,0.15);
+}
+
+/* Button 1 */
+.btn-1 {
+    background: #15FCF8;
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #00C9C6;color: #15FCF8;
+}
+
+.btn-1:active {
+    background:#00C9C6;
+    top: 2px;
+}
+
+.btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+.icon-send:before { 
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+   
+ 
+}
+
+body
+{
+    font-family: 'Dosis', sans-serif;
+}
+.paralax
+{
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+height: 80vh;
+border-bottom-right-radius: 50% 10%;
+border-bottom-left-radius: 50% 10%;
+}
+.banner
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}
+.banner-heading
+{
+  animation-duration: 2.8s;
+   animation-delay: 0.2s;
+}
+.banner-paragraph
+{
+	 animation-duration: 2.8s;
+	  animation-delay: 0.2s;
+}
+
+
+.menu-item {
+  font-size: 17px;
+    padding: 0px;
+  letter-spacing: 1px;
+    font-weight: 500;
+ color: white;
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  
+ color: #01CDCA;
+
+}
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+.main-head
+{
+ color:#15FCF8; 
+}
+.underline-dark
+{
+	width: 150px;
+	border: 2px solid #15FCF8; 
+	margin: auto;
+}
+.icon
+{
+  color:#15FCF8;    
+}
+/*----------------------------Mission---------------*/
+#mission
+{
+	color: #777;
+}
+
+#collection
+{
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url('../img/background.jpg');
+}
+
+.heading
+{
+	position: absolute;
+	top: 70%;
+	right: 10%;
+	letter-spacing: 1px;
+	font-size: 20px;
+    cursor: pointer;
+	transition: all 0.4s;
+}
+.heading:hover
+{
+	font-size: 30px;
+	border-bottom: 2px solid white;
+    
+}
+
+.gallery-item
+{
+	color: #777;
+	cursor:pointer;
+}
+.active-item
+{
+	color: aqua;
+}
+.grow img{
+-webkit-filter: brightness(100%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+
+.grow img:hover{
+-webkit-filter: brightness(70%);
+}
+
+/*-----------------------pricing----------------------*/
+.card-1
+{
+	background:linear-gradient(rgba(8,8,8,0.3),rgba(0,0,0,0.7)),url("../img/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	box-shadow: 5px 8px 20px #555;
+	width: 80%;
+     transition: all 0.3s ease-out;
+	margin:auto;
+}
+.card-1:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+.card-item
+{
+font-size: 17px;
+	border-bottom: 1px solid white;
+	width: 50%;
+	margin: auto;
+
+}
+.card-button
+{
+	color: white;
+	background-color:black;
+	width:130px;
+	border-radius: 20px;
+border: 1px solid #fff;
+	box-shadow: 5px 8px 15px #000;
+	transition: all .4s;
+}
+.card-button:hover
+{
+	background:#171717;
+	transform:translate(-2px);
+	color: white;
+}
+/*---------------------Contact us------------------*/
+.contact-us
+{
+background:linear-gradient(105deg,
+	rgba(21, 31, 32, 1)0%,
+	rgba(21, 31, 32, .95)50%,
+	transparent 10%),
+	url("../img/contactus.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+    color: #777;
+
+}
+
+.input
+{
+background: transparent;	
+	border-color: transparent;
+	border-bottom: 1px solid white;
+	border-radius: 0;
+	transition: all .4s;
+}
+.input:focus
+{
+	box-shadow: none;
+	color: white;
+    background: transparent;	
+	border-color: transparent;
+	border-bottom: 1px solid #15FCF8;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+.submit-button
+{
+	background:  #15FCF8;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 5px;
+	width: 40%;
+	transform: all .2s;
+}
+.submit-button:hover
+{
+	color: white;
+	background:#01CDCA;
+	transform: translate(-3px);
+}
+.footer-links li
+{
+	display: inline-block;
+	margin-left: 0%;
+}
+.footer-links li a:hover
+{
+	text-decoration: none;
+}
+.footer-bck
+{
+	background: #292828;
+}
+.visit
+{
+	text-decoration: none;
+	list-style: none;
+}
+.social-icons
+{
+	color: #15FCF8;
+	
+}
+.bck
+{
+  background-color:  #15FCF8;
+    
+}

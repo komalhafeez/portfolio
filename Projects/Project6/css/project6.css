@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+   
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+body
+{
+
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.icon
+{
+    color:#639BFC;
+}
+.nav-item .menu-item
+{
+    color:#939292;
+    text-decoration: none!important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.nav-item .menu-item:focus
+{
+   color:#639BFC;
+}
+
+.active
+{
+   border-top: 2px solid #639BFC;
+   
+}
+.bar-icons
+{
+color:#639BFC;
+  border:1px solid white !important;
+    outline:none !important;
+
+}
+.nav-icon
+{
+  color:#639BFC;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.nav-icon:hover
+{
+       color:#B4B4B4;
+}
+
+@keyframes zoom
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2) translateX(-5%);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.header
+{
+    overflow: hidden;
+    background-color: white;
+  clip-path:polygon(0 0,100% 0,100% 95%, 50% 100%,0% 95%);
+}
+.title-heading{
+    background:rgba(0,0,0,0.4);
+    border-left: 0.4rem solid #639BFC;
+}
+.height-max
+{
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url("../img/car2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-name: zoom;
+    animation-duration: 30s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+@media screen and(min-width:768px){
+.title
+    {
+        font-size: 3rem;
+    }
+}
+.title-icon 
+{
+    color:#639BFC;
+    
+}
+.title-icon :hover
+{
+    opacity: 0.7;
+}
+/*section service*/
+.section-title 
+{
+    background-color: #639BFC;
+    color: white;
+    padding: 0.2rem 2rem;
+    clip-path:polygon(10% 0,100% 0,90% 100%,0 100%);
+    
+}
+
+
+
+#service-item-icon 
+{
+    color: #639BFC;
+    background-color:#B4B4B4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 1.8rem;
+    display: inline-block;
+   padding-top: 0.8rem;
+    padding-left: 0.2rem;
+    
+}
+#inventory
+{
+      background-color:#B4B4B4;
+}
+ .card img
+{
+    border-radius: 0!important;
+    border-top-left-radius: 0;
+   border-top-right-radius: 0;
+}
+.car-price
+{
+        background-color: #639BFC;
+    color: white;
+    clip-path:polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+.car-price:hover
+{
+    clip-path:polygon(0% 0,100% 0,100% 100%,0 100%);
+}
+#question
+{
+    background: url("../img/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.question-grey
+{
+    background: rgba(90,120,120,0.8);
+}
+.question-yellow
+{
+    background: rgba(200,180,4,0.8);
+}
+.question-icon i
+{
+    font-size: 4rem;
+    color: #639BFC;
+    transition: all 1s ease-in-out;
+}
+.question-icon i:hover
+{
+    transform: translateY(-10%);
+    color: #639BFC;
+}
+.gallery-items{
+    position: relative;
+    cursor: pointer;
+    background-color: #639BFC;
+}
+.gallery-img
+{
+    transition: all 1s ease-in-out;
+}
+.gallery-items:hover .gallery-img
+{
+    opacity: 0.5;
+}
+.gallery-items:after
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid white;
+    outline-offset: -2rem;
+    transition: all 1s ease-in-out;
+    transform: scale(0);
+}
+.gallery-items:hover:after
+{
+    transform: scale(1);
+}
+#contact
+{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("../img/contact.jpg")center/cover fixed no-repeat;
+}
+.contact-form
+{
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border-color: 0.2rem solid #639BFC;
+}
+.contact-form:focus
+{
+    background-color: transparent;
+    border-color: 0.2rem solid #639BFC; 
+}
+.contact-form::placeholder
+{
+     color: white;
+}
+.contact-button
+{
+    text-transform: uppercase;
+    color: white;
+      background-color: #639BFC;
+}
+.contact-button:hover
+{
+   border-color: 0.2rem solid #639BFC;
+    background-color: transparent;    
+}
+.video{
+    position: relative;
+    min-height: 85vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    clip-path:polygon(0 10%,100% 0, 100% 90%,0 100%);
+}
+.video-container
+{
+    position: absolute;
+    top: 0;
+left: 0;
+    height: 100%;
+    width: 100%;z-index: -3;
+}
+.video-item
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overly
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #639BFC;
+    z-index: -2;
+    opacity: 0.6;
+}
+.video-row
+{
+    background-color:#1F1F1F;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.video-row:hover
+{
+    background: white;
+    color: black;
+    padding-left: 2.2rem !important;
+}
+.video-icons
+{
+    color: #639BFC;
+}
+.customer-card-body
+{
+ margin-top: -4rem!important;
+    color: grey;
+}
+.customer-img
+{
+    
+    border-radius: 50px;
+}
+.customer-name
+{
+    color: #639BFC;
+    margin: 0.5rem;
+}
+.customer-icon
+{
+    font-size: 1rem;
+    color: lightgray;
+}
+.customer-quote
+{
+    max-width: 90%;
+}
+.footer-icon
+{
+    color: #639BFC;
+    transition: all 1s ease-in-out;
+}
+.footer-icon:hover
+{
+ color: lightgrey;
+}

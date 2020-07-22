@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body
+{
+font-family: 'Handlee', cursive;
+}
+.custom-navbar
+{
+background-color: white;
+    color:  #B431C5;
+}
+.menu-bar
+{
+    transition: all .7s;
+    background: transparent;
+}
+.l1, .l2 ,.l3
+{
+	width: 20px;
+	height: 3px;
+	margin: 5px;
+    background: #4A2302;
+    outline: none;
+    border: none;
+    transition: all 0.4s ease;
+	
+}
+.change .l1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .l2 {
+  opacity: 0;
+}
+
+.change .l3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+header{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-toggler
+{
+    border-color: #2F026F;
+    font-size: 2rem;
+    color: #2F026F;
+}
+.nav-item .menu-item
+{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:#646464;
+    padding: 0px 20px;
+    transition: 0.4s ease;
+    
+}
+.nav-item .menu-item:hover
+{ 
+ color: #646464;
+}
+
+.nav-active
+{
+    border-bottom: 2px solid #B431C5;
+  
+}
+.navbar-icons
+{
+ font-size: 1.5rem;
+   color: #646464;
+}
+.navbar-cart-icon
+{
+    position: relative;
+     color:#B431C5;
+    text-decoration:none;
+}
+.navbar-cart-icon:hover
+{
+    color: #646464;
+     text-decoration:none;
+}
+.cart-items
+{
+    color: white;
+    position: absolute;
+    top:-6%;
+    right: -25%;
+    font-size: 0.5rem;
+    background-color: #B431C5;
+    padding: 0.2rem 0.3rem;
+    border-radius: 50%;
+}
+.banner
+{
+  
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url("../img/SouthernsBroadstock-Home2.jpg");
+  min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.banner2
+{
+  
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url("../img/banner2.jpg");
+height: 60vh;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.banner h1
+{
+    color: white;
+   
+}
+.banner2 h1
+{
+   
+    margin-top: 12rem;
+    transform: all .2s;
+}
+.banner2 h1:hover
+{
+     
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+   transform: translate(-3px);
+
+}
+.banner-paragraph
+{
+    font-size: 1.5rem;
+    color: white;    
+}
+.purple-btn
+{
+    padding: 5px 30px;
+    font-weight: normal;
+    color: white;
+    background-color: #B431C5;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none !important;
+    font-family: 'Oswald', sans-serif;  
+  transform: all .2s;
+    
+}
+.purple-btn:hover
+{
+     background-color:#90279E;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+      color: white;
+   transform: translate(-3px);
+
+}
+#service-item-icon
+{
+ background-color: white;
+    border: 2px solid #646464;
+    color: #B431C5;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    padding: 1rem 1rem;
+}
+#service-item-desc
+{
+    color: #646464;
+}
+.content-title-underline
+{
+    width: 10rem;
+    height: 0.3rem;
+   margin: 0rem auto;
+    background-color:  #646464;
+    border-radius: 20%;
+}
+.heading
+{
+  color: #B431C5; 
+}
+.old-price
+{
+    text-decoration: line-through;
+}
+.product-container 
+{
+   border: 2px solid #646464;
+    overflow: hidden;
+    position: relative;
+}
+.product-store-link
+{
+color:white;
+text-decoration: none;
+background-color:  #646464;
+position: absolute;
+padding: 0.5rem 0.5rem;
+top: 80%;
+width:100px;
+text-transform: capitalize;
+height: 35px;
+font-family: 'Oswald', sans-serif;
+right: 0%;
+transform: translateX(110%);
+transition: all 0.5s ease-in-out;
+    
+}
+.product-container:hover .product-store-link
+{
+    text-decoration: none;
+    color:white;
+    transform: translateX(0%);
+}
+.discount
+{
+    font-weight: 700;
+}
+#our-clients
+{
+     border-top: 1px solid #646464;
+     border-bottom: 1px solid #646464;
+}
+
+#client-item-1
+{
+    margin-top: 2rem;
+}
+#client-item-2
+{
+    margin-top: 2rem;
+}
+.submit
+{
+    color:white;
+    font-size: 1rem;
+text-decoration: none;
+background-color:  #646464;
+    width:150px;
+text-transform: capitalize;
+height: 40px;
+ border-radius: 1rem;
+font-family: 'Oswald', sans-serif;
+    padding: 0.2rem 0.6rem;
+}
+.form-icon
+{
+    color: black;
+}
+.last-section
+{
+   background-color:  #646464;
+      color:white;
+}
+.footer-text
+{
+    border: 0.2rem solid #B431C5;
+    padding: 0.4rem;
+   
+  
+}
+.footer-icon 
+{
+    color: #B431C5;
+}
+.header-text
+{
+  border: 0.2rem solid #646464;
+    padding: 0.4rem;
+    color: #B431C5;
+    font-size: 20px;
+}
+.header-text:hover{
+     color: white;
+     border: 0.2rem solid #646464;
+}
+.slider{
+  background:  #646464;
+    width: 100%;
+}
+.carousel-control-prev {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(-200%);
+}
+.carousel-control-next {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(200%);
+}
+.category-container
+{
+    position: relative;
+}
+.category-container:hover .category-img
+{
+    opacity: 0.5;
+}
+.category-img
+{
+    transition: all 1s linear;
+}
+.category-link
+{
+    position: absolute;
+    left: 0%;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 0%;
+    padding: 0.1rem 1.3rem 0.1rem 0.1rem;
+    text-decoration: none;
+    background-color: white;
+    color: #646464;
+    opacity: 0;
+    transition: all 1s linear; 
+    clip-path:polygon(0 0 ,80% 0, 100% 100%, 0 100%);
+}
+.category-container:hover .category-link
+{
+    opacity: 1;
+    text-decoration: none;
+     color: #646464;
+}
+.purple
+{
+     color: #B431C5;
+}
+.product-categories-underline
+{
+    height: 0.1rem;
+    width: 5rem;
+    background-color: #646464;
+}
+.product-categories-link
+{
+    text-decoration: none;
+      color: #646464;
+}
+.product-categories-link:hover
+{
+    color: black;
+    text-decoration: none;
+}
+.products-color
+{
+    height: 1rem;
+    width: 1rem;
+}
+.products-color-red
+{
+    background-color: red;
+}
+.products-color-blue
+{
+    background-color: blue;
+}
+.products-color-black
+{
+    background-color: black;
+}
+.products-color-yellow
+{
+    background-color:yellow;
+}
+.products-color-green
+{
+    background-color:green;
+}
+.product-categories-title
+{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #B431C5;
+}
+.side-bar
+{
+    font-family: 'Oswald', sans-serif;  
+}
+.btn-black
+{
+    font-family: 'Oswald', sans-serif;  
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color:black;
+    border-radius: 0rem !important;
+    border:0.1rem solid black;
+}
+.btn-black:hover
+{
+    background-color: black;
+    color: white;
+}
+.single-product-photo
+{
+  
+    opacity: 0.5;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    box-sizing: border-box!important;
+}
+.single-product-photo:hover
+{
+    border: 1px solid #646464;
+    opacity: 1;
+}
+.rating-icon
+{
+    color: yellow;
+}
