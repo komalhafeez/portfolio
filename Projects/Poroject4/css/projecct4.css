@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+body
+{
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    padding: 0;
+  
+    /* Hide vertical scrollbar */
+  overflow-x: hidden;
+}
+#header
+{
+    position: fixed;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+     z-index: 1;
+    transition: left .5s ease;
+}
+#header .toggle-button
+{
+    background: none;
+    color:#525151;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border:1px solid #FFFFFF;
+}
+.toggle-left
+{
+    left: 0 !important;
+    width: 1000px !important;
+}
+#header nav
+{
+    height: 100vh;
+    
+}
+#header, .site-title, .navbar-brand
+{
+    letter-spacing: 2;
+    color: #fff;
+}
+#header nav,.nav-link
+{
+    margin: .7rem 1rem;
+    border-bottom: 1px solid #333333;
+    text-transform: uppercase;
+}
+
+#header, nav,.nav-link:hover
+{
+color:#FFFFFF !important;
+} 
+
+#header .social-icon i
+{
+   
+    color:#fff;
+    z-index: 3 !important;
+}
+/*main menu*/
+.main-section .banner-area
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),url("../img/background.jpg");
+    background-repeat: no-repeat;
+    width: 110%;
+    height: 100vh;
+    padding: 0%;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    z-index: -3;
+    right: 0%;
+    top: 0%;
+}
+.main-section .banner-area .author
+{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+  top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+.main-section .banner-area .author .author-img img
+{
+    
+    width: 170px;
+
+}
+.font-size-40
+{
+    font-size: 40px;
+}
+.font-size-34
+{
+    font-size: 34px;
+}
+.font-size-27
+{
+    font-size: 27px;
+}
+.font-size-20
+{
+    font-size: 20px;
+}
+.font-size-16
+{
+    font-size: 16px;
+}
+.bgcolor-black
+{
+    background-color: black;
+}
+
+
+/*---------------------portfolio-------------------*/
+.gallery-item
+{
+color: #000;
+cursor:pointer !important;
+     
+}
+.active-item
+{
+	color: aqua;
+}
+/*--------------contactus---------------*/
+.contactus .contact-form .input
+{
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    padding: 1.5rem 1rem;
+}
+.contactus .contact-form .input:focus::placeholder 
+{
+    color: transparent; border: none;
+}
+.end-section
+{
+height: 100px !important;
+ position: relative;
+    margin-left: 0;
+     z-index: -3;
+}
+@media only screen and (min-width: 900px) {
+    .toggle-button
+    {
+        display: none;
+    }
+    
+}
