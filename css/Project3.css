@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');/*header*/
+*
+{
+	overflow-x: scroll;
+}
 
 .allcolor
 {
@@ -10,7 +14,6 @@
 body
 {
 font-family: 'Roboto', sans-serif;
-overflow-x: scroll;
 }
 /*btn*/
 
