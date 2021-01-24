@@ -10,7 +10,7 @@
 body
 {
 font-family: 'Roboto', sans-serif;
-overflow: visible;
+overflow-x: scroll;
 }
 /*btn*/
 
